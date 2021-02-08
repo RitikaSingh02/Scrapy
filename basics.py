@@ -1,7 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome("/home/ritika/Documents/selenium-env/env/scrapy/scrapy_project/chromedriver")
+options=webdriver.ChromeOptions()
+options.add_argument("headless")
+driver = webdriver.Chrome("/home/ritika/Documents/selenium-env/env/scrapy/scrapy_project/chromedriver",chrome_options=options)
+
+##headless browser
+# a browser which does not dispose a graphical user interface
+
 driver.get("https://duckduckgo.com/")
 
 # driver.find_element_by_id("search_from_input_homepage")
@@ -24,10 +30,7 @@ search_input.send_keys("My User Agent")
 
 search_input.send_keys(Keys.ENTER)
 
+print(driver.page_source)
 
 driver.close()
 
-
-##headless browser
-
-# a browser which does not dispose a graphical user interface
