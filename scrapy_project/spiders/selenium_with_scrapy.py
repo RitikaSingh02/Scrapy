@@ -2,7 +2,7 @@ import scrapy
 from selenium import webdriver
 from scrapy.selector import Selector
 
-
+##test
 class CoinSpiderSelenium(scrapy.Spider):
     name = 'coin_selenium'
     allowed_domains = ["www.livecoinwatch.com"]
