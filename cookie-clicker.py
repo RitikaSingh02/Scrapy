@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
-driver = webdriver.Chrome("/home/ritika/Documents/selenium-env/env/chromedriver")
+driver = webdriver.Chrome("/home/ritika/Documents/selenium-env/env/scrapy/scrapy_project/chromedriver")
 driver.get("https://orteil.dashnet.org/cookieclicker/")
 driver.maximize_window()
 element=""
